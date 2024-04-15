@@ -11,6 +11,8 @@ public class Teste {
 		System.out.println("1- Consultar contato");
 		System.out.println("2- Adicionar Contato");
 		
+		
+		
 		int opAux = 0;
 		int elemento = 1;
 		while(opAux != 1) {

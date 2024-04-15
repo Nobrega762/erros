@@ -10,12 +10,13 @@ public class Teste {
 		System.out.println("Informe as opções: ");
 		System.out.println("1- Consultar contato");
 		System.out.println("2- Adicionar Contato");
+		System.out.println("3- Sair do Sistema");
 		
 		
 		
 		int opAux = 0;
 		int elemento = 1;
-		while(opAux != 1) {
+		while(opAux != 3) {
 			
 			int value = read.nextInt();
 			
@@ -29,7 +30,9 @@ public class Teste {
 				int indice = read.nextInt();
 				
 				agenda.consultarContato(indice);
-				
+				System.out.println("1- Consultar contato");
+				System.out.println("2- Adicionar Contato");
+				System.out.println("3- Sair do Sistema");
 			
 				break;
 			}
@@ -52,22 +55,27 @@ public class Teste {
 				
 				System.out.println("1- Consultar contato");
 				System.out.println("2- Adicionar Contato");
+				System.out.println("3- Sair do Sistema");
 				elemento++;
 				
 				break;
-				
-				
-				
-				
-				
 			}
+			case 3:{
+				System.out.println("Saindo do sistema...");
+				break;
+			}
+				
+				
+				
+			
 			default:
 				System.out.println("Tente denovo");
 				System.out.println("Informe as opções: ");
 				System.out.println("1- Consultar contato");
 				System.out.println("2- Adicionar Contato");
+				System.out.println("3- Sair do Sistema");
 				
-				opAux = 0;
+				
 			}
 			
 			

@@ -6,17 +6,31 @@ public class Agenda {
 	
 
 	
-	public void adicionarContato(Contato contato, int elemento) {
+	
+	
+	
+	public void adicionarContato(Contato contato, int elemento) throws MyException  {
+		
+		
+		if(elemento > contatos.length) {
+			throw new MyException();
+		}	
 		
 		contatos[elemento - 1] = contato;
-		
+
 		
 	}
 	
 	
-	public void consultarContato(int indice) {
+	public void consultarContato(int indice) throws MyException {
 		
-		System.out.println(contatos[indice - 1]);
+		if(contatos[indice-1] == null) {
+			throw new MyException();
+		}
+			
+				System.out.println(contatos[indice - 1]);
+			
+				
 		
 		
 	}
